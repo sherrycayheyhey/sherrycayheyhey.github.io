@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>filterama! </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <title>filterama!</title>
+</head>
+
+<body>
+  <!-- include the source of the library -->
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  </script>
+
+  <div class="rainbow-back">
+    <h1> filterama! </h1>
+    <p> Upload a picture and watch it transform!</p>
+
+    <canvas id="uploadCanvas">
+</canvas>
+
+    <div id="imageSelect">
+      <input type="file" multiple="false" accept="image/*" id="findInput" onchange="upload()">
+      <input id="magic" type="button" value="click to filter!" onclick="doAllTheThings()">
+    </div>
+  </div>
+
+  <!--<input type="button" value="reset" onclick="reset()">
+</div>-->
+
+  <h1 id="filters">filters</h1>
+
+  <div class="clearfix">
+    <canvas id="grayCanvas" class="rightImage"> </canvas>
+    <div class="leftText">
+      <h2 id="grayTitle"> grayscale </h2>
+
+      <p>The image was turned gray by looking at each individual pixel's red, green, and blue values and then averaging them. The pixel's red, green, and blue values were each set to this new value. </p>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="rainbowCanvas" class="leftImage"> </canvas>
+    <div class="rightText">
+      <h2 id="rainbowTitle"> rainbow </h2>
+
+      <p>The first step was to find average of each pixel's red, green, and blue value. Each pixel was then set to a value based on its location in the image as well as it's average RGB value. </p>
+      <p>
+        An added feature to try later is an input control to flip the stripes from horizontal to vertical.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="blurCanvas" class="rightImage"> </canvas>
+    <div class="leftText">
+      <h2 id="blurTitle"> blur </h2>
+
+      <p>This is was supposed to be a blurred image but it ended up looking like tv static and I like it.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="redCanvas" class="leftImage"> </canvas>
+    <div class="rightText">
+      <h2 id="redTitle"> red </h2>
+
+      <p>Each pixel's average RGB value was first computed. If the average was smaller than 128 (half the color range) the red was set to double the previous amount and green and blue were each set to 0. If the average was larger than 128, the red was set
+        to 255 (the maximum possible) and green and blue were each set to double the average minus 255.</p>
+
+      <p>
+        It would be cool to have color sliders to manipulate the colors here so that a user could add different tints to the image.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="hueCanvas" class="rightImage"> </canvas>
+    <div class="leftText">
+      <h2 id="hueTitle"> hue shift </h2>
+
+      <p>To achieve the effect here the CSS filter "hue rotate" was used. The colors of the image are rotated around the color wheel by a specified number of degrees. 0 degrees represents the original image, while 180 degrees is directly across the color
+        wheel. This image is set to 180 degrees and looks really cool!</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="opacityCanvas" class="leftImage"> </canvas>
+    <div class="rightText">
+      <h2 id="opacityTitle"> opacity </h2>
+
+      <p>This is another built-in CSS filter. The opacity is set to 30%. If I did this by hand I would adjust the alpha value of the RGBA setting and maybe set it to different opacities based on the color values. </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <canvas id="iRainbowCanvas" class="rightImage"> </canvas>
+    <div class="leftText">
+      <h2 id="iRainbowTitle"> inverted rainbow stripes </h2>
+
+      <p>This filter is similar to the rainbow filter above except it uses inverted colors and repeats color sections. Depending on the pixel's location in the image, either the maximum (255) red, green, or blue is subtracted from the pixel's actual red,
+        green, or blue.</p>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
