@@ -1,0 +1,102 @@
+html, body {
+  background: #400080;
+  height: 100%;
+  margin: 10px;
+}
+
+/*.rainbow-back {
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ffccff, #ebccff, #ccffff, #ffffcc);
+}
+*/
+#imageSelect{
+  border: none;
+}
+
+#magic{
+  margin: 10px;
+  font-size: 24px;
+  background-image: linear-gradient(to bottom right, #ffffcc, #ccffff, #ffccff, #ebccff);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 4px;
+  
+}
+#filters {
+  color: white;
+  font-size: 250%;
+}
+canvas {
+  width: 550px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  text-decoration: underline;
+  
+}
+
+hr {
+  border: 1px solid white;
+}
+
+div {
+  border: 3px solid #f911c7;
+  padding: 5px;
+  margin: 10px;
+  width: 95%;
+  background: #f2e6ff;
+  
+}
+
+div img{
+width: 250px;
+height: auto;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.leftText {
+    float: left;
+	border: none;
+    background: #f2e6ff;
+	width: 50%;
+}
+
+
+.rightImage {
+  float: right;
+  width=25%; 
+  height="25%";
+}
+
+.rightText {
+  float: right;
+	border: none;
+    background: #f2e6ff;
+	width: 50%;
+    }
+
+.leftImage {
+  float: left;
+  width=25%; 
+  height="25%";
+}
+
+#hueCanvas {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);}
+
+#opacityCanvas {
+  filter:opacity(30%);
+}
+
+#filterCanvases {
+  background: #400080;
+  margin: auto;
+  width: 100%;
+  padding: 100px;
+}
+
